@@ -9,15 +9,15 @@
 import UIKit
 
 class MyTextField: UITextField {
-
+    
     var dropDown: MyTableView!
     let dataArray = ["1", "2", "3", "4", "5"]
     
     override func draw(_ rect: CGRect) {
-         super.draw(rect)
+        super.draw(rect)
         delegate = self
     }
- 
+    
     func setupDropDown() {
         dropDown = MyTableView(textField: self, dataArray: dataArray)
         if let superview = superview {

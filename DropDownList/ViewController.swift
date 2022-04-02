@@ -11,9 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var textField: MyTextField!
-    
-   
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }

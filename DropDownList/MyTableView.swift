@@ -13,8 +13,7 @@ class MyTableView: UITableView {
     var dataArray = [String]()
     
     convenience init(textField: UITextField, dataArray: [String]) {
-        let positon = MyTableView.getPositon(textField: textField)
-        let frame = CGRect(x: positon.x, y: positon.y, width: textField.frame.width, height: 200)
+        let frame = MyTableView.makeTableViewFrame(textField: textField)
         self.init(frame: frame, style: .plain)
         self.dataArray = dataArray
     }
@@ -25,10 +24,11 @@ class MyTableView: UITableView {
         dataSource = self
     }
     
-    static func getPositon(textField: UITextField) -> CGPoint {
+    static func makeTableViewFrame(textField: UITextField) -> CGRect {
         let textFieldPosition = textField.frame.origin
         let point = CGPoint(x: textFieldPosition.x, y: textFieldPosition.y + textField.frame.height + 5)
-        return point
+        let frame = CGRect(x: point.x, y: point.y, width: textField.frame.width, height: 200)
+        return frame
     }
 }
 
