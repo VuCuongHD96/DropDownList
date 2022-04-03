@@ -18,7 +18,6 @@ class ViewController: UIViewController {
         
         let myView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 0))
         myView.backgroundColor = .green
-//        myView.frame.size.height = 300
         view.addSubview(myView)
     }
     

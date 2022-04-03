@@ -1,1 +1,19 @@
-- 
+* Textfield
+
+- Nhấn vào text field
+	-> hiện table view (xong)
+	-> không được show bàn phím (xong)
+	-> không hiển thị dấu nháy (lỗi)
+	-> có icon mũi tên thể hiện drop down
+
+- Hiển thị table view phía trên | dưới nếu đủ khoảng cách hiển thị
+	-> kiểm tra khoảng cách để hiển thị table view (chưa đc case hướng lên trên)
+
+
+* Table View
+
+- Nạp dữ liệu cho table view(xong)
+- Co dãn theo content bên trong (xong)
+- chọn 1 phần tử (xong)
+	-> set giá trị cho text field
+	-> ẩn table view
