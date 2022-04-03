@@ -13,16 +13,22 @@ class MyTextField: UITextField {
     var dropDown: MyTableView!
     let dataArray = ["1", "2", "3", "4", "5"]
     
-    override func draw(_ rect: CGRect) {
-        super.draw(rect)
-        delegate = self
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        setupView()
     }
     
+    // MARK: - View
     func setupDropDown() {
-        dropDown = MyTableView(textField: self, dataArray: dataArray)
+        let orientation = Orientation(textField: self)
+        dropDown = MyTableView(dataArray: dataArray, orientation: orientation)
         if let superview = superview {
             superview.addSubview(dropDown)
         }
+    }
+    
+    func setupView() {
+        delegate = self
     }
 }
 
