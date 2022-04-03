@@ -22,7 +22,7 @@ enum Orientation {
             let frame = CGRect(x: 0, y: 0, width: textFieldWidth, height: textFieldHeight)
             self = .above(frame)
         } else {
-            let position = CGRect(x: textFieldX, y: textFieldY + textFieldHeight + 5, width: textFieldWidth, height: 200)
+            let position = CGRect(x: textFieldX, y: textFieldY + textFieldHeight + 5, width: textFieldWidth, height: 10)
             self = .below(position)
         }
     }

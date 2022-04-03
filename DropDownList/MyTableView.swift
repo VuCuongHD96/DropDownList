@@ -8,9 +8,14 @@
 
 import UIKit
 
+protocol MyTableViewDelegate {
+    func selected(data: String)
+}
+
 class MyTableView: UITableView {
     
     var dataArray = [String]()
+    var myDelegate: MyTableViewDelegate?
     
     convenience init(dataArray: [String], orientation: Orientation) {
         let frame = orientation.getFrame()
@@ -20,8 +25,9 @@ class MyTableView: UITableView {
     
     override func draw(_ rect: CGRect) {
         super.draw(rect)
-        setNeedsLayout()
         dataSource = self
+        delegate = self
+        setNeedsLayout()
     }
 }
 
@@ -36,5 +42,14 @@ extension MyTableView: UITableViewDataSource {
         cell.backgroundColor = .green
         cell.textLabel?.text = dataArray[indexPath.row]
         return cell
+    }
+}
+
+extension MyTableView: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let data = dataArray[indexPath.row]
+        myDelegate?.selected(data: data)
+        isHidden = true
     }
 }
