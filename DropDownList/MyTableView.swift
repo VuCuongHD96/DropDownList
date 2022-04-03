@@ -12,8 +12,8 @@ class MyTableView: UITableView {
     
     var dataArray = [String]()
     
-    convenience init(textField: UITextField, dataArray: [String]) {
-        let frame = MyTableView.makeTableViewFrame(textField: textField)
+    convenience init(dataArray: [String], orientation: Orientation) {
+        let frame = orientation.getFrame()
         self.init(frame: frame, style: .plain)
         self.dataArray = dataArray
     }
@@ -22,13 +22,6 @@ class MyTableView: UITableView {
         super.draw(rect)
         setNeedsLayout()
         dataSource = self
-    }
-    
-    static func makeTableViewFrame(textField: UITextField) -> CGRect {
-        let textFieldPosition = textField.frame.origin
-        let point = CGPoint(x: textFieldPosition.x, y: textFieldPosition.y + textField.frame.height + 5)
-        let frame = CGRect(x: point.x, y: point.y, width: textField.frame.width, height: 200)
-        return frame
     }
 }
 

@@ -14,6 +14,8 @@
 		A41D569527F73BBC009AE9B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41D569327F73BBC009AE9B1 /* LaunchScreen.storyboard */; };
 		A41D569F27F74015009AE9B1 /* MyTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D569E27F74015009AE9B1 /* MyTableView.swift */; };
 		A41D56A127F74F76009AE9B1 /* MyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D56A027F74F76009AE9B1 /* MyTextField.swift */; };
+		A438E26927F9429A00601390 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A438E26827F9429A00601390 /* Screen.swift */; };
+		A438E26B27F9438A00601390 /* Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A438E26A27F9438A00601390 /* Orientation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		A41D569627F73BBC009AE9B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A41D569E27F74015009AE9B1 /* MyTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableView.swift; sourceTree = "<group>"; };
 		A41D56A027F74F76009AE9B1 /* MyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextField.swift; sourceTree = "<group>"; };
+		A438E26827F9429A00601390 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		A438E26A27F9438A00601390 /* Orientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orientation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				A41D568A27F73BBA009AE9B1 /* AppDelegate.swift */,
 				A41D568C27F73BBA009AE9B1 /* ViewController.swift */,
 				A41D56A027F74F76009AE9B1 /* MyTextField.swift */,
+				A438E26A27F9438A00601390 /* Orientation.swift */,
+				A438E26827F9429A00601390 /* Screen.swift */,
 				A41D569E27F74015009AE9B1 /* MyTableView.swift */,
 				A41D568E27F73BBA009AE9B1 /* Main.storyboard */,
 				A41D569127F73BBC009AE9B1 /* Assets.xcassets */,
@@ -141,9 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A438E26927F9429A00601390 /* Screen.swift in Sources */,
 				A41D568D27F73BBA009AE9B1 /* ViewController.swift in Sources */,
 				A41D569F27F74015009AE9B1 /* MyTableView.swift in Sources */,
 				A41D568B27F73BBA009AE9B1 /* AppDelegate.swift in Sources */,
+				A438E26B27F9438A00601390 /* Orientation.swift in Sources */,
 				A41D56A127F74F76009AE9B1 /* MyTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
